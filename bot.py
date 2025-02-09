@@ -151,3 +151,8 @@ async def main():
 # Запуск бота
 if __name__ == "__main__":
     asyncio.run(main())
+
+@dp.message_handler(lambda message: message.text in TIME_SLOTS)
+async def set_time_preference(message: types.Message):
+    set_user_time_preference(message.from_user.id, message.text)
+    await message.answer(f"Ты выбрал {message.text}. Теперь ежедневные вопросы будут приходить в это время.")

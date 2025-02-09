@@ -1,0 +1,11 @@
+[0;1;32m●[0m atopicskin_bot.service - AtopicSkin Bot
+     Loaded: loaded (/etc/systemd/system/atopicskin_bot.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Sat 2025-02-08 22:39:57 MSK; 65ms ago
+   Main PID: 9741 (python3)
+      Tasks: 1 (limit: 1068)
+     Memory: 12.2M
+        CPU: 57ms
+     CGroup: /system.slice/atopicskin_bot.service
+             └─9741 /usr/bin/python3 /root/atopicskin_bot/bot.py
+
+Feb 08 22:39:57 kvo.fvds.ru systemd[1]: Started AtopicSkin Bot.
